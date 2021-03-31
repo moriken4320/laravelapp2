@@ -5,6 +5,8 @@
 @section('menubar')
     @parent
     インデックスページ
+    test
+    test2
 @endsection
 
 @section('content')
