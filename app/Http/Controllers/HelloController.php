@@ -7,8 +7,24 @@ use Illuminate\Http\Request;
 
 class HelloController extends Controller
 {
-    public function index(Request $request, Response $response)
+    public function index()
     {
-        return view('hello.index')->with('request',$request)->with('response', $response);
+        $data = [
+            'one',
+            'two',
+            'three',
+            'four',
+            'five',
+        ];
+        return view('hello.index', ['data'=>$data]);
+    }
+
+    public function post(Request $request)
+    {
+        $msg = $request->msg;
+        $data = [
+            'msg' => 'こんには' . $msg . 'さん',
+        ];
+        return view('hello.index', $data);
     }
 }
