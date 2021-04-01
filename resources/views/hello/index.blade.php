@@ -8,6 +8,7 @@
     test
     test2
     tes3
+    test4
 @endsection
 
 @section('content')
