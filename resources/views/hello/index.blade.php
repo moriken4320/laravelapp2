@@ -7,6 +7,7 @@
     インデックスページ
     test
     test2
+    tes3
 @endsection
 
 @section('content')
